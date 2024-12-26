@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import UploadCareButton from './uploadcare-button'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'

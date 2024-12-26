@@ -30,7 +30,10 @@ function UploadCareButton({ onUpload }: Props) {
          sourceList="local, url, camera, dropbox"
          classNameUploader="uc-light"
          pubkey="c525aa1eafccf7e28ee0"
-         onFileUploadSuccess={(e) => console.log('✅', e)}
+         onFileUploadSuccess={(e) => {
+          console.log('✅', e)
+          onUpload(e.cdnUrl)
+        }}
       />
 
       
